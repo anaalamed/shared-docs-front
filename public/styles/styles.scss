@@ -1,0 +1,19 @@
+$toolbar_color: #92a8d1;
+$main_color: #034f84;
+$secondary_color: #35dcd9;
+$white_color: #fff;
+$black_color: #111;
+
+@import "header";
+@import "main";
+@import "form";
+
+body {
+  min-height: 100%;
+  background-color: $white_color;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

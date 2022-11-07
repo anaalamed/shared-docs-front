@@ -1,0 +1,11 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 90vh;
+  border-left: 1px solid $black_color;
+  border-right: 1px solid $black_color;
+
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+}

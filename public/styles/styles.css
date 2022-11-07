@@ -1,0 +1,67 @@
+header {
+  height: 10vh;
+  background: #92a8d1;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 90vh;
+  border-left: 1px solid #111;
+  border-right: 1px solid #111;
+  display: flex;
+  justify-content: center;
+}
+
+.form_wrapper {
+  background: #034f84;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form_wrapper .form_title {
+  color: #35dcd9;
+  font-size: 3rem;
+  margin: 3rem 1rem;
+}
+.form_wrapper .form {
+  width: 40%;
+  background: #35dcd9;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 4rem 1rem;
+}
+.form_wrapper .form .field_wrapper {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+}
+.form_wrapper .form .field_wrapper .field_input {
+  width: 300px;
+  border-radius: 10px;
+  height: 45px;
+  padding: 0 1rem;
+}
+.form_wrapper .form .submit_btn {
+  width: 50%;
+  background: #034f84;
+  height: 45px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+body {
+  min-height: 100%;
+  background-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
