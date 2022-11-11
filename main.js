@@ -11,17 +11,18 @@ const registration = async () => {
     body: JSON.stringify(user),
   })
     .then(async (response) => {
-      const isJson = response.headers
-        .get("content-type")
-        ?.includes("application/json");
+      const isJson = response.headers.get("content-type")?.includes("application/json");
       const data = isJson && (await response.json());
 
       if (!response.ok) {
         const error = (data && data.message) || response.status;
+        $(".modal-title").text("Registration failed");
+        $(".modal-body").text(error);
         return Promise.reject(error);
       }
 
-      console.log("success");
+      $(".modal-title").text("Registration success");
+      $(".modal-body").text("Please log in!");
     })
     .catch((error) => {
       console.error("error: ", error);
@@ -30,6 +31,9 @@ const registration = async () => {
 
 $("#registration_form").on("submit", function (e) {
   e.preventDefault();
-  console.log("sign up");
   registration();
+});
+
+$("#myModal").on("shown.bs.modal", function () {
+  $("#myInput").trigger("focus");
 });

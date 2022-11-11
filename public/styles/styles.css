@@ -19,6 +19,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 90vh;
 }
 .form_wrapper .form_title {
   color: #35dcd9;
