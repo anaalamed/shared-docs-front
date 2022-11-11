@@ -7,6 +7,10 @@
     <title>Shared Docs</title>
     <link rel="stylesheet" href="./public/styles/styles.css" />
     <script src="main.js" type="module"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -21,17 +25,32 @@
         <form id="registration_form" class="form">
           <div class="field_wrapper">
             <label for="name">Name</label>
-            <input class="field_input" type="text" placeholder="name" />
+            <input
+              id="name"
+              class="field_input"
+              type="text"
+              placeholder="name"
+            />
           </div>
 
           <div class="field_wrapper">
             <label for="email">Email</label>
-            <input class="field_input" type="email" placeholder="email" />
+            <input
+              id="email"
+              class="field_input email"
+              type="email"
+              placeholder="email"
+            />
           </div>
 
           <div class="field_wrapper">
             <label for="password">Password</label>
-            <input class="field_input" type="password" placeholder="password" />
+            <input
+              id="password"
+              class="field_input password"
+              type="password"
+              placeholder="password"
+            />
           </div>
 
           <button class="submit_btn" type="submit">Submit</button>
